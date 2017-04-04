@@ -1,8 +1,5 @@
-# Casper
-
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
-
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+# Casper 中文汉化
+[Ghost](http://github.com/tryghost/ghost/) 博客平台的默认主题
 
 ## Copyright & License
 
