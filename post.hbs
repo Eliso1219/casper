@@ -10,7 +10,7 @@
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">菜单</span></a>
+            <a class="menu-button icon-menu" href="#"><span class="iconfont">&#58912;</span><span class="word">菜单</span></a>
         {{/if}}
     </nav>
 </header>
@@ -49,8 +49,8 @@
                     <p>继续阅读此作者的<a href="{{url}}">更多文章</a>.</p>
                 {{/if}}
                 <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    {{#if location}}<p><span class="iconfont">&#58913;</span><span class="author-location">{{location}}</span></p>{{/if}}
+                    {{#if website}}<p><span class="iconfont">&#58915;</span><span class="author-link"><a href="{{website}}">{{website}}</a></span></p>{{/if}}
                 </div>
             </section>
 
@@ -58,17 +58,23 @@
 
             <section class="share">
                 <h4>社交</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
+                <a href="https://www.zhihu.com/people/Eliso1219/">
+                    <span class="iconfont iconshare">&#58890;</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
+                <a href="http://weibo.com/eliso1219/">
+                    <span class="iconfont iconshare">&#58884;</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
+                <a href="https://github.com/eliso1219">
+                    <span class="iconfont iconshare">&#58889;</span>
+                </a>
+                <a href="https://space.bilibili.com/16025318/">
+                    <span class="iconfont iconshare">&#58887;</span>
+                </a>
+                <a href="https://www.facebook.com/eliso1219/">
+                    <span class="iconfont iconshare">&#58888;</span>
+                </a>
+                <a href="https://www.twitter.com/eliso1219/">
+                    <span class="iconfont iconshare">&#58886;</span>
                 </a>
             </section>
 

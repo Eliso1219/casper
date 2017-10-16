@@ -9,7 +9,7 @@
         <nav class="main-nav overlay clearfix">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
             {{#if @blog.navigation}}
-                <a class="menu-button icon-menu" href="#"><span class="word">菜单</span></a>
+                <a class="menu-button icon-menu" href="#"><span class="iconfont">&#58912;</span><span class="word">菜单</span></a>
             {{/if}}
         </nav>
     </header>
@@ -25,11 +25,32 @@
             <h2 class="author-bio">{{bio}}</h2>
         {{/if}}
         <div class="author-meta">
-            {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='没有文章' singular='% 篇文章' plural='% 篇文章'}}</span>
+            {{#if location}}<p class="author-location">{{location}}</p>{{/if}}
+            {{#if website}}<p class="author-link"><a href="{{website}}">{{website}}</a></p>{{/if}}
+            <p class="author-stats"><i clsass="icon-stats"></i> {{plural ../pagination.total empty='没有文章' singular='% 篇文章' plural='% 篇文章'}}</p>
+        </div>
+        <div class="author-meta">
+            <a href="https://www.zhihu.com/people/Eliso1219/">
+                <span class="iconfont iconshare">&#58890;</span>
+            </a>
+            <a href="http://weibo.com/eliso1219/">
+                <span class="iconfont iconshare">&#58884;</span>
+            </a>
+            <a href="https://github.com/eliso1219">
+                <span class="iconfont iconshare">&#58889;</span>
+            </a>
+            <a href="https://space.bilibili.com/16025318/">
+                <span class="iconfont iconshare">&#58887;</span>
+            </a>
+            <a href="https://www.facebook.com/eliso1219/">
+                <span class="iconfont iconshare">&#58888;</span>
+            </a>
+            <a href="https://www.twitter.com/eliso1219/">
+                <span class="iconfont iconshare">&#58886;</span>
+            </a>
         </div>
     </section>
+            
 {{/author}}
 
 {{!-- The main content area on the homepage --}}
