@@ -1,4 +1,5 @@
-# Casper
+# Casper中文汉化版本，适用于0.12版本的Ghost.
+
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
 
